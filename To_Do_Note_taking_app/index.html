@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To-Do App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-300">
+
+        <div class="app-container md:flex">
+
+     <div class="relative container h-auto  p-[6%] pl-[10%] text-green-800">
+         <div class="flex ">
+            <img class="w-16 h-16  mr-2" src="notes.png" />
+            <h1 class="text-5xl mt-1 font-bold text-white"> Notes</h1>
+         </div>
+         
+         <button class="btn flex bg-violet-800 mt-4 hover:bg-violet-900  text-white font-bold py-2 px-4 rounded-full">
+          <img class="h-6 w-6 " src="pencil1.png"/>   Create Notes
+        </button>
+
+
+        <div class="notes-container font-bold ">
+   <p class="input-box relative min-h-40 max-w-[35rem] bg-white p-5 m-5 rounded-sm outline-none " contenteditable="true">
+            <i class="fas fa-trash-alt w-5 bottom-5 right-3 mr-5 absolute cursor-pointer"></i>
+         </p> 
+         
+     </div>
+
+     </div>
+      
+     <div class="md:mt-36 ml-10 md:ml-0 mr-4  md:mr-24">
+
+        <div class="to-doApp p-[6%] pr-[10%] bg-white h-auto rounded-xl w-full md:mr-10 h-auto">
+
+         <h1 class="text-3xl mt-1 font-bold text-blue">To-Do List</h1>
+
+         <div class="flex mt-2">
+            <input id="task-input" class="p-2 font-bold outline-none border-non bg-white rounded-xl" type="text" id="input-box" placeholder="Add your text "/>
+            <button id="add-button" class="md:ml-14 md:mr-2 mr-24 px-6 md:px-10 py-3 bg-[#ff5945] text-white cursor-pointer rounded-3xl">Add</button>
+         </div>
+
+         <ul class="mt-2 list-container font-semibold cursor-pointer">
+          
+         </ul>
+
+     </div>
+
+    </div>
+    </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>  
+
+
+
+          

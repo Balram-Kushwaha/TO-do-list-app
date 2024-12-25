@@ -1,0 +1,41 @@
+.app-container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url("moon_665088.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 4px;
+    margin-right: 12px;
+    padding-left: 12px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+ 
+    background-image: url("checked.png");
+   
+}
+
+
+
+
+
+
+
